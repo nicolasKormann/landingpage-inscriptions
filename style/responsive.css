@@ -1,0 +1,196 @@
+:root {
+  --mobile-container: 320px
+}
+
+@media (max-width:600px) {
+
+/* ----------- HEADER --------------- */
+  nav {
+    /* display: none; */
+  }
+
+  header div img {
+    width: 40%;
+  }
+
+  .container-menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-menu {
+    display: none;
+  }
+
+  #checkbox-menu {
+    position: absolute;
+    opacity: 0;       
+  }
+
+  header label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;    
+  }
+
+  header label span {
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #1A1A1A;
+    border-radius: 30px;
+    transition: 0.25s ease-in-out;
+  }
+
+  header label span:nth-child(1) {
+    top: 0;
+  }
+
+  header label span:nth-child(2) {
+    top: 8px;
+  }
+
+  header label span:nth-child(3) {
+    top: 16px;
+  }
+
+  #checkbox-menu:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px
+  }
+
+  #checkbox-menu:checked + label span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #checkbox-menu:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px
+  }  
+
+  /* ----------- MAIN --------------- */
+  main .container-main {
+    width: 320px;
+    gap: 25px;
+  }
+
+  main .background {
+    background-image: none;
+  }
+
+  main .container-main h1 {
+    font-size: 34px;
+    line-height: normal;
+  }
+
+  main .container-main h2 {
+    font-size: 28px;
+    width: 90%;
+  }
+
+  main .container-main p {
+    font-size: 16px;
+  }
+
+  main .container-main .subscribers {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  main .container-main .subscribers p {
+    font-size: 18px;
+  }
+
+  /* ---------- CONTACT ------------- */
+  section#contact {
+    margin-block: 50px;
+    height: auto;
+  }
+
+  section#contact #contact-container {
+    width: var(--mobile-container)
+  }
+
+  section#contact #contact-container h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  section#contact form {
+    font-size: 16px;    
+  }
+
+  section#contact fieldset:nth-child(6) legend {
+    font-size: 16px;
+  }
+
+  section#contact fieldset:nth-child(6) {    
+    font-size: 12px;
+    line-height: 150%;
+    text-align: justify;
+  }
+
+  section#contact input[type="submit"] {
+    font-size: 11px;
+
+  }
+
+  /* ---------- FOOTER ------------- */
+  footer hr {
+    max-width: var(--mobile-container);
+  }
+
+  footer .footer-container {
+    margin: 0 auto;
+    padding-block: 25px;
+    max-width: var(--mobile-container);      
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;      
+  }
+
+  footer .footer-container img {
+    width: 50%;
+  }
+
+  footer .footer-container p, 
+  footer .footer-container div {
+    font-size: 12px;
+  }
+
+  footer div p{
+    padding-block: 5px;
+  }
+
+
+
+
+
+  
+  
+
+ 
+}
+
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 630px) {
+  
+  
+  
+
+  
+
+}
